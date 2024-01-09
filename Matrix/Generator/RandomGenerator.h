@@ -13,8 +13,8 @@ private:
 public:
 	/**
 	*@brief Инициализация объекта типа рандомгенератор
-	*@param min Минимальное значение
-	*@param max Максимальное значение
+	*@param min - Минимальное значение
+	*@param max - Максимальное значение
 	*/
 	RandomGenerator(const int min, const int max);
 

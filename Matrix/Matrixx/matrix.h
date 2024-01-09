@@ -23,12 +23,7 @@ public:
 	*/
 	void add_row(std::vector<int> user_data);
 
-	/**
-	*@brief Фукция заменяющая элементы первых трех столбцов их квадратами
-	*@param num_rows - кол-во строк в матрице
-	*@param num_cols - кол-во столбцов в матрице
-	*/
-	void square_three_cols(const size_t num_rows, const size_t num_cols, Matrix&matrix);
+	
 
 	/**
 	*@brief Получение кол-ва строк в матрице

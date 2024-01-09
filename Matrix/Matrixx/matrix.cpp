@@ -32,17 +32,6 @@ std::vector<int>& Matrix::operator[](size_t index)
 	return data[index];
 }
 
-void square_three_cols(Matrix&matrix, const size_t rows, const size_t cols) 
-{
-	for (size_t i = 0; i < 3; i++) 
-	{
-		for (size_t j = 0; j < rows; j++) 
-		{
-			matrix[j][i] = matrix[j][i] * matrix[j][i];
-		}
-	}
-
-}
 
 size_t Matrix::rows_counts() const
 {
