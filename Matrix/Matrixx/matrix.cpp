@@ -43,11 +43,10 @@ size_t Matrix::rows_counts() const
 
 size_t Matrix::cols_counts() const
 {
-	if (this->data.size() == 0)
+	if (this->data.size() > 0)
 	{
-		return 0;
+		return this->data[0].size();
 	}
-	return this->data[0].size();
 }
 
 std::string Matrix::toString() const noexcept
