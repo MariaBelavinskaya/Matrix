@@ -23,6 +23,10 @@ Matrix::Matrix(size_t num_rows, size_t num_cols, Generator* generator)
 
 void Matrix::add_row(std::vector<int> user_data)
 {
+	if (user_data.size() != this->data.size())
+	{
+		std::out_of_range("Invalid new row size");
+	}
 	this->data.push_back(user_data);
 }
 
