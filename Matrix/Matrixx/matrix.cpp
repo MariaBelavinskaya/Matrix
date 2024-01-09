@@ -25,7 +25,7 @@ void Matrix::add_row(std::vector<int> user_data)
 {
 	if (user_data.size() != this->data.size())
 	{
-		std::out_of_range("Invalid new row size");
+		std::out_of_range("Invalide size new data");
 	}
 	this->data.push_back(user_data);
 }
