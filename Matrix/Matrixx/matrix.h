@@ -14,7 +14,7 @@ public:
 	*@param num_cols Количество столбцов
 	*@param generator Генератор, которым будет заполнена матрица
 	*/
-	Matrix(size_t num_rows, size_t num_cols, Generator* generator);
+	Matrix(int num_rows, int num_cols, Generator* generator);
 
 	/**
 	*@brief Добавляется строка в матрицу по индексу, если же индекс не указан, то элемент добавляется в конец

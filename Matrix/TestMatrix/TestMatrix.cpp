@@ -74,7 +74,6 @@ namespace TestMatrix
 			Matrix m1(1, 3, &isg);
 			Task t1(m1, &isg);
 			Matrix m2 = t1.task1();
-			std::cout << m1.toString();
 			bool are_equal = (m2.toString() == "1 4 9 \n");
 			Assert::IsTrue(are_equal);
 		}

@@ -2,7 +2,7 @@
 #include <random>
 #include <sstream>
 
-Matrix::Matrix(size_t num_rows, size_t num_cols, Generator* generator)
+Matrix::Matrix(int num_rows, int num_cols, Generator* generator)
 	: data({})
 {
 	if (num_rows <= 0 || num_cols <= 0 || generator==nullptr)
@@ -32,7 +32,7 @@ void Matrix::add_row(std::vector<int> user_data)
 
 std::vector<int>& Matrix::operator[](size_t index)
 {
-	if (index>rows_counts())
+	if (index>=rows_counts())
 	{
 		throw std::out_of_range("Incorect index");
 	}
@@ -47,10 +47,7 @@ size_t Matrix::rows_counts() const
 
 size_t Matrix::cols_counts() const
 {
-	if (this->data.size() > 0)
-	{
-		return this->data[0].size();
-	}
+	return this->data.size();
 }
 
 std::string Matrix::toString() const noexcept
